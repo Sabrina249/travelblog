@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link href="tailwind.min.css" rel="stylesheet">
+  <style media="screen">
+    body {
+    background-image: url("backgroundImage.jpg");
+    background-size:100%;
+  }
+  .rosaBackground {
+    background-color: rgb(251,182,206, 0.75);
+  }
+  </style>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap rosaBackground p-6">
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-pink-900 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="impressum.html" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white mr-4">
+            Impressum
+          </a>
+          <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white">
+            Contact
+          </a>
+        </div>
+        <div class="invisible md:visible lg:flex-grow">
+          <div class="flex items-center text-pink-900 mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <a href="home.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-pink-900 border-white hover:border-transparent hover:text-pink-900 hover:bg-pink mt-4 lg:mt-0">Home</a>
+        </div>
+      </div>
+    </nav>
+    <div class="m-auto my-64 w-full max-w-xs">
+      <form id="loginForm" class="rosaBackground shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Username
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Password
+          </label>
+          <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+        </div>
+        <div id="content">
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Sign In
+          </button>
+        </div>
+      </form>
+      <p class="text-center text-gray-500 text-xs">
+        &copy;2020 Sabrina. All rights reserved.
+      </p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
