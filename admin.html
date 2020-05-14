@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="tailwind.min.css" rel="stylesheet">
+    <link href="homes.css" rel="stylesheet">
+  </head>
+  <style media="screen">
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    body {
+    background-image: url("backgroundImage.jpg");
+    background-size:100%;
+  }
+  .rosaBackground {
+    background-color: rgb(251,182,206, 0.75);
+  }
+  </style>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap rosaBackground p-6">
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-pink-900 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white mr-4">
+            Impressum
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white">
+            Contact
+          </a>
+        </div>
+        <div class="invisible md:visible lg:flex-grow">
+          <div class="flex items-center text-pink-900 mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <a href="mapadmin.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-pink-900 border-white hover:border-transparent hover:text-pink-900 hover:bg-pink mt-4 lg:mt-0">Home</a>
+        </div>
+        <div id="logoutButton"></div>
+      </div>
+    </nav>
+    <div class="md:flex container justify-around m-12 mr-0 lg:max-w-full">
+    <div class="invisible md:visible max-w-sm rounded shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
+  </div>
+  <div class="px-6 py-4">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+  </div>
+</div>
+    <form id="newPostForm" class="w-full max-w-lg">
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-author">
+        Author
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-author" type="text" placeholder="Sam Sample">
+    </div>
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-title">
+        Title
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-title" type="text" placeholder="Give it an awesome title">
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-description">
+        Description
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-description" type="text" placeholder="Give it an awesome description">
+      <p class="text-gray-600 text-xs italic">Give it an awesome description</p>
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-2">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+        City
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Hamburg">
+    </div>
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-country">
+        Country
+      </label>
+        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-country" type="text" placeholder="Germany">
+    </div>
+    <button class="bg-gray-200 hover:bg-blue-700 text-gray-700 font-bold py-2 px-4 rounded-full" id="search" type="button">Search for CoCoordinates</button>
+    <div class="w-full px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-img">
+        Image
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-img" type="text" placeholder="Image">
+    </div>
+  </div>
+  <button class="bg-gray-200 hover:bg-blue-700 text-gray-700 font-bold py-2 px-4 rounded-full" id="submitForm" type="submit">Don`t care, SHARE!!!</button>
+</form>
+  </div>
+  <div id="content" class="flex flex-wrap">
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+  <script src="admin.js"></script>
+  </body>
+</html>

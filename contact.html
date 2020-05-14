@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="tailwind.min.css" rel="stylesheet">
+    <style>
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+        body {
+        background-image: url("backgroundImage.jpg");
+        background-size:100%;
+      }
+      .rosaBackground {
+        background-color: rgb(251,182,206, 0.75);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap rosaBackground p-6">
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-pink-900 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white mr-4">
+            Impressum
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-pink-900 hover:text-white">
+            Contact
+          </a>
+        </div>
+        <div class="invisible md:visible lg:flex-grow">
+          <div class="flex items-center text-pink-900 mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <a href="login.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-pink-900 border-white hover:border-transparent hover:text-pink-900 hover:bg-pink mt-4 lg:mt-0">Login</a>
+        </div>
+      </div>
+    </nav>
+    <div class="h-64 flex items-center justify-between flex-wrap p-6 mt-48 rosaBackground">
+    <div class="w-2/5"></div>
+    <div class="w-3/5 flex">
+  <div class="w-2/4 h-64 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('gd2minAk0Xg9cKXdNOaR3TX0jOh1.jpg')" title="Woman holding a mug">
+  </div>
+  <div class="w-2/4 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <div class="mb-8">
+      <div class="text-gray-900 font-bold text-xl mb-2">It's me - Sabrina</div>
+      <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+    </div>
+    <div class="flex items-center">
+      <div class="text-sm">
+        <p class="text-gray-900 leading-none">Sabrina Schramme</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="h-64 flex items-center justify-between flex-wrap rosaBackground p-6 mt-48">
+<div class="w-2/5"></div>
+<div class="w-3/5 flex">
+  <form class="w-full max-w-sm">
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label class="block text-black font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">
+          Full Name
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe">
+      </div>
+    </div>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label class="block text-black font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-email">
+          Email
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-username" type="password" placeholder="******************">
+      </div>
+    </div>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3"></div>
+      <label class="md:w-2/3 block text-black font-bold">
+        <input class="mr-2 leading-tight" type="checkbox">
+        <span class="text-sm">
+          Contact me!
+        </span>
+      </label>
+    </div>
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/3"></div>
+      <div class="md:w-2/3">
+        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+  </body>
+</html>
